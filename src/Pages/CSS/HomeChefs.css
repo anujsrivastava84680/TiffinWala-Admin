@@ -1,0 +1,515 @@
+
+.homechefs-page {
+  padding: 28px;
+  color: #292929;
+}
+
+/* HEADING */
+
+.homechefs-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.homechefs-heading h1 {
+  margin: 0;
+  color: #174F40;
+  font-size: 25px;
+}
+
+.homechefs-heading p {
+  margin: 8px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+.homechefs-heading-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #E6F4EC;
+  color: #174F40;
+  border-radius: 12px;
+  font-size: 21px;
+}
+
+/* STAT CARDS */
+
+.homechef-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.homechef-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 19px 16px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 13px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.025);
+}
+
+.homechef-stat-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  font-size: 18px;
+}
+
+.homechef-stat-icon.total {
+  color: #174F40;
+  background: #E6F4EC;
+}
+
+.homechef-stat-icon.active {
+  color: #16834D;
+  background: #E7F7ED;
+}
+
+.homechef-stat-icon.pending {
+  color: #D9821F;
+  background: #FFF3DF;
+}
+
+.homechef-stat-icon.inactive {
+  color: #D45A45;
+  background: #FCECE8;
+}
+
+.homechef-stat-card p {
+  margin: 0 0 7px;
+  color: #888;
+  font-size: 11px;
+}
+
+.homechef-stat-card h2 {
+  margin: 0;
+  color: #292929;
+  font-size: 23px;
+}
+
+/* TOOLBAR */
+
+.homechefs-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.homechefs-search {
+  width: 370px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 9px;
+  color: #999;
+}
+
+.homechefs-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #292929;
+  font-size: 12px;
+}
+
+.homechefs-toolbar select {
+  min-width: 175px;
+  height: 43px;
+  padding: 0 12px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 9px;
+  color: #555;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* TABLE */
+
+.homechefs-table-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 13px;
+}
+
+.homechefs-table-heading {
+  padding: 20px 21px;
+  border-bottom: 1px solid #eee;
+}
+
+.homechefs-table-heading h3 {
+  margin: 0;
+  color: #174F40;
+  font-size: 15px;
+}
+
+.homechefs-table-heading p {
+  margin: 6px 0 0;
+  color: #999;
+  font-size: 11px;
+}
+
+.homechefs-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.homechefs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.homechefs-table th {
+  padding: 15px 17px;
+  background: #F8F6F2;
+  color: #777;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.homechefs-table td {
+  padding: 15px 17px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+  font-size: 11px;
+}
+
+.homechefs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.homechefs-table tbody tr:hover {
+  background: #fcfdfb;
+}
+
+.homechef-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.homechef-avatar {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  background: #E6F4EC;
+  color: #174F40;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.homechef-info div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.homechef-info strong {
+  color: #292929;
+  font-size: 11px;
+}
+
+.homechef-info span {
+  color: #999;
+  font-size: 10px;
+}
+
+/* STATUS BADGES */
+
+.homechef-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.chef-approved,
+.chef-active {
+  background: #E7F7ED;
+  color: #16834D;
+}
+
+.chef-pending {
+  background: #FFF3DF;
+  color: #C47A16;
+}
+
+.chef-rejected {
+  background: #FCECE8;
+  color: #D45A45;
+}
+
+.chef-inactive {
+  background: #EEEEEE;
+  color: #777;
+}
+
+/* ACTION BUTTONS */
+
+.homechef-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.homechef-actions button {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: 0.2s;
+}
+
+.homechef-view-btn {
+  background: #E6F4EC;
+  color: #174F40;
+}
+
+.homechef-view-btn:hover {
+  background: #174F40;
+  color: #fff;
+}
+
+.homechef-approve-btn {
+  background: #E7F7ED;
+  color: #16834D;
+}
+
+.homechef-approve-btn:hover {
+  background: #16834D;
+  color: #fff;
+}
+
+.homechef-reject-btn,
+.homechef-deactivate-btn {
+  background: #FCECE8;
+  color: #D45A45;
+}
+
+.homechef-reject-btn:hover,
+.homechef-deactivate-btn:hover {
+  background: #D45A45;
+  color: #fff;
+}
+
+.homechef-empty {
+  padding: 35px !important;
+  text-align: center;
+  color: #999 !important;
+}
+
+/* DETAILS MODAL */
+
+.homechef-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.48);
+}
+
+.homechef-modal {
+  width: 100%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 22px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.homechef-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.homechef-modal-header h3 {
+  margin: 0;
+  color: #174F40;
+  font-size: 16px;
+}
+
+.homechef-modal-header button {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: #FCECE8;
+  color: #D45A45;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.homechef-modal-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.homechef-modal-avatar {
+  color: #174F40;
+  font-size: 48px;
+}
+
+.homechef-modal-profile h2 {
+  margin: 9px 0;
+  color: #292929;
+  font-size: 19px;
+}
+
+.homechef-modal-profile span {
+  padding: 5px 12px;
+  background: #E7F7ED;
+  color: #16834D;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.homechef-detail-list {
+  padding: 12px 15px;
+  background: #F8F6F2;
+  border-radius: 10px;
+}
+
+.homechef-detail-list p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 11px 0;
+  color: #666;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.homechef-detail-list strong {
+  color: #292929;
+}
+
+.homechef-modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+.homechef-modal-actions button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.homechef-modal-actions button:first-child {
+  background: #E7F7ED;
+  color: #16834D;
+}
+
+.homechef-modal-actions button:last-child {
+  background: #FCECE8;
+  color: #D45A45;
+}
+
+.homechef-modal-status-btn {
+  width: 100%;
+  margin-top: 17px;
+  padding: 12px;
+  background: #174F40;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .homechef-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .homechefs-page {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homechefs-page {
+    padding: 17px;
+  }
+
+  .homechefs-heading h1 {
+    font-size: 21px;
+  }
+
+  .homechef-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .homechefs-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .homechefs-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .homechefs-toolbar select {
+    width: 100%;
+  }
+
+  .homechefs-table-heading {
+    padding: 16px;
+  }
+}
